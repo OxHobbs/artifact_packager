@@ -8,3 +8,9 @@ execute 'run_berks_package' do
   cwd '/var/opt/delivery/workspace/csschefautomate3.southcentralus.cloudapp.azure.com/delivery_ent/pilot-org/artifact_packager/master/build/publish/repo'
   action :run
 end
+
+execute 'md5_hash' do
+  command 'md5sum cookbooks-* >> md5_cookbooks.txt'
+  cwd '/var/opt/delivery/workspace/csschefautomate3.southcentralus.cloudapp.azure.com/delivery_ent/pilot-org/artifact_packager/master/build/publish/repo'
+  action :run
+end
