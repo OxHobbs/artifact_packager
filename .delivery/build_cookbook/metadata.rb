@@ -1,5 +1,5 @@
 name 'build_cookbook'
-maintainer 'The Authors'
+maintainer 'me'
 maintainer_email 'you@example.com'
 license 'all_rights'
 version '0.1.0'
